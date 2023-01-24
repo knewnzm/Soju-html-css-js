@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haha ha cats</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+    <div class="wrap">
+      <header>
+          <h1>haha ha네 고양이</h1>
+       </header>
+      <main>
+            <div class="side-bar">
+                <button type="button" class="add-btn" id="add">
+                    추가
+                </button>
+                <span>길막이네</span>
+                <span>카오네</span>
+                <span>삼색이네</span>
+                <span>천하네</span>
+            </div>
+             <div class="cat">
+                <div class="card">
+                    <img src="./img/mak.jpg" alt="길막">
+                    <span>길막</span>
+                </div>
+                <div class="card">
+                    <img src="./img/tong.jpg" alt="야통">
+                    <span>야통</span>
+                </div>
+                <div class="card">
+                    <img src="./img/nim.png" alt="연님">
+                    <span>연님</span>
+                </div>
+                <div class="card">
+                    <img src="./img/jo.jpg" alt="조">
+                    <span>조</span>
+                </div>
+                <div class="card">
+                    <img src="./img/moo.jpeg" alt="무">
+                    <span>무</span>
+                </div>
+                <div class="card">
+                    <img src="./img/gi.jpg" alt="래기">
+                    <span>래기</span>
+                </div> 
+            </div>
+        </main>
+    </div>
+
+    <div class="modal-background hidden" id="modal">
+        <form class="modal" id="addItemForm">
+            <span class="modal-close" id="closeModal">X</span>
+            <label for="fam" class="label">family</label>
+            <input id="fam" type="text" placeholder="다른 고양이 가족" class="input" required>
+            <label for="image" class="label">image</label>
+            <input id="image" type="text" placeholder="URL" class="input" required>
+            <label for="name" class="label">이름</label>
+            <input id="name" type="text" placeholder="고양이 이름" class="input" required>
+            <button type="submit" id="submit" class="submit-button">저장</button> 
+        </form>
+    </div>
+
+
+    <script src="modal.js"></script>
+ <!---   <script src="addItem.js"></script> -->
+</body>
+</html>
